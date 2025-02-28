@@ -67,10 +67,11 @@ Add this to your `claude_desktop_config.json`:
       "command": "npx",
       "args": [
         "-y",
-        "@hannesrudolph/mcp-ragdocs"
+        "@abutbul/mcp-ragdocs"
       ],
       "env": {
         "OPENAI_API_KEY": "",
+        "OPENAI_BASE_URL":"",
         "QDRANT_URL": "",
         "QDRANT_API_KEY": ""
       }
@@ -80,7 +81,9 @@ Add this to your `claude_desktop_config.json`:
 ```
 
 You'll need to provide values for the following environment variables:
-- `OPENAI_API_KEY`: Your OpenAI API key for embeddings generation
+- `OPENAI_API_KEY`: use-anything-dummy-ollama
+- `OPENAI_BASE_URL`: your ollama endpoint (make sure to have nomic-embed-text:latest embedding model loaded),
+
 - `QDRANT_URL`: URL of your Qdrant vector database instance
 - `QDRANT_API_KEY`: API key for authenticating with Qdrant
 
@@ -90,4 +93,4 @@ This MCP server is licensed under the MIT License. This means you are free to us
 
 ## Acknowledgments
 
-This project is a fork of [qpd-v/mcp-ragdocs](https://github.com/qpd-v/mcp-ragdocs), originally developed by qpd-v. The original project provided the foundation for this implementation.
+This project is a fork of [hannesrudolph/mcp-ragdocs](https://github.com/hannesrudolph/mcp-ragdocs), originally developed by qpd-v. The original projects provided the foundation for this implementation.
